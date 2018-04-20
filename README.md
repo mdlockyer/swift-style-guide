@@ -921,7 +921,7 @@ guard let thingThree = thingThree else {
 }
 ```
 
-* **3.11.7** You should use one-liners for `guard` statements if
+* **3.11.7** You should prefer one-liners for `guard` statements if
 the `guard` body contains a only a `return` or `return nil` and the line is sufficiently short as to not exceed the 160 characters limit. 
 
 
