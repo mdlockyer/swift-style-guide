@@ -922,7 +922,7 @@ guard let thingThree = thingThree else {
 ```
 
 * **3.11.7** One-liners for `guard` statements are preferred if
-the `guard` body contains only a `return` or `return nil` and the line is sufficiently short as to not exceed the 160 characters limit. 
+the `guard` body contains only a `return` or `return nil` and the line is sufficiently short as to not exceed the 160 character limit. 
 
 
 ```swift
