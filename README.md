@@ -921,17 +921,18 @@ guard let thingThree = thingThree else {
 }
 ```
 
-* **3.11.7** Don’t use one-liners for `guard` statements.
+* **3.11.7** You should use one-liners for `guard` statements if
+the `guard` body contains a only a `return` or `return nil` and the line is sufficiently short as to not exceed the 160 characters limit. 
 
 
 ```swift
 // PREFERRED
+guard let thingOne = thingOne else { return }
+
+// NOT PREFERRED
 guard let thingOne = thingOne else {
     return
 }
-
-// NOT PREFERRED
-guard let thingOne = thingOne else { return }
 ```
 
 ## 4. Documentation/Comments
