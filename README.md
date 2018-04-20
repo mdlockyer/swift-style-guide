@@ -1,10 +1,5 @@
 # Swift Style Guide
 
-Make sure to read [Apple's API Design Guidelines](https://swift.org/documentation/api-design-guidelines/).
-
-Specifics from these guidelines + additional remarks are mentioned below.
-
-This guide was last updated for Swift 4.0 on February 14, 2018.
 
 ## Table Of Contents
 
@@ -29,7 +24,7 @@ This guide was last updated for Swift 4.0 on February 14, 2018.
 
 ## 1. Code Formatting
 
-* **1.1** Use 4 spaces for tabs.
+* **1.1** Prefer tabs to spaces.
 * **1.2** Avoid uncomfortably long lines with a hard maximum of 160 characters per line (Xcode->Preferences->Text Editing->Page guide at column: 160 is helpful for this)
 * **1.3** Ensure that there is a newline at the end of every file.
 * **1.4** Ensure that there is no trailing whitespace anywhere (Xcode->Preferences->Text Editing->Automatically trim trailing whitespace + Including whitespace-only lines).
@@ -575,7 +570,7 @@ func handleDigit(_ digit: Int) throws {
 
 ### 3.5 Optionals
 
-* **3.5.1** The only time you should be using implicitly unwrapped optionals is with `@IBOutlet`s. In every other case, it is better to use a non-optional or regular optional property. Yes, there are cases in which you can probably "guarantee" that the property will never be `nil` when used, but it is better to be safe and consistent. Similarly, don't use force unwraps.
+* **3.5.1** The only times you should be using implicitly unwrapped optionals is with `@IBOutlet`s, and optional method parameters that have a default value. In every other case, it is better to use a non-optional or regular optional property. Yes, there are cases in which you can probably "guarantee" that the property will never be `nil` when used, but it is better to be safe and consistent. Similarly, don't use force unwraps.
 
 * **3.5.2** Don't use `as!` or `try!`.
 
