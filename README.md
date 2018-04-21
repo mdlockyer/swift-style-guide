@@ -25,7 +25,7 @@
 ## 1. Code Formatting
 
 * **1.1** Prefer tabs to spaces.
-* **1.2** Use 4 spaces for tabs.
+* **1.2** One tab should equal 4 spaces.
 * **1.3** Avoid uncomfortably long lines with a hard maximum of 160 characters per line (Xcode->Preferences->Text Editing->Page guide at column: 160 is helpful for this)
 * **1.4** Ensure that there is a newline at the end of every file.
 * **1.5** Ensure that there is no trailing whitespace anywhere (Xcode->Preferences->Text Editing->Automatically trim trailing whitespace + Including whitespace-only lines).
