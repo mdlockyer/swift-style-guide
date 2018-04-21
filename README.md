@@ -25,10 +25,11 @@
 ## 1. Code Formatting
 
 * **1.1** Prefer tabs to spaces.
-* **1.2** Avoid uncomfortably long lines with a hard maximum of 160 characters per line (Xcode->Preferences->Text Editing->Page guide at column: 160 is helpful for this)
-* **1.3** Ensure that there is a newline at the end of every file.
-* **1.4** Ensure that there is no trailing whitespace anywhere (Xcode->Preferences->Text Editing->Automatically trim trailing whitespace + Including whitespace-only lines).
-* **1.5** Do not place opening braces on new lines - we use the [1TBS style](https://en.m.wikipedia.org/wiki/Indentation_style#1TBS).
+* **1.2** Use 4 spaces for tabs.
+* **1.3** Avoid uncomfortably long lines with a hard maximum of 160 characters per line (Xcode->Preferences->Text Editing->Page guide at column: 160 is helpful for this)
+* **1.4** Ensure that there is a newline at the end of every file.
+* **1.5** Ensure that there is no trailing whitespace anywhere (Xcode->Preferences->Text Editing->Automatically trim trailing whitespace + Including whitespace-only lines).
+* **1.6** Do not place opening braces on new lines - we use the [1TBS style](https://en.m.wikipedia.org/wiki/Indentation_style#1TBS).
 
 ```swift
 class SomeClass {
@@ -46,7 +47,7 @@ class SomeClass {
 }
 ```
 
-* **1.6** When writing a type for a property, constant, variable, a key for a dictionary, a function argument, a protocol conformance, or a superclass, don't add a space before the colon.
+* **1.7** When writing a type for a property, constant, variable, a key for a dictionary, a function argument, a protocol conformance, or a superclass, don't add a space before the colon.
 
 ```swift
 // specifying type
@@ -77,13 +78,13 @@ extension PirateViewController: UITableViewDataSource {
 }
 ```
 
-* **1.7** In general, there should be a space following a comma.
+* **1.8** In general, there should be a space following a comma.
 
 ```swift
 let myArray = [1, 2, 3, 4, 5]
 ```
 
-* **1.8** There should be a space before and after a binary operator such as `+`, `==`, or `->`. There should also not be a space after a `(` and before a `)`.
+* **1.9** There should be a space before and after a binary operator such as `+`, `==`, or `->`. There should also not be a space after a `(` and before a `)`.
 
 ```swift
 let myValue = 20 + (30 / 2) * 3
@@ -95,7 +96,7 @@ func pancake(with syrup: Syrup) -> Pancake {
 }
 ```
 
-* **1.9** We follow Xcode's recommended indentation style (i.e. your code should not change if CTRL-I is pressed). When declaring a function that spans multiple lines, prefer using that syntax to which Xcode, as of version 7.3, defaults.
+* **1.10** We follow Xcode's recommended indentation style (i.e. your code should not change if CTRL-I is pressed). When declaring a function that spans multiple lines, prefer using that syntax to which Xcode, as of version 7.3, defaults.
 
 ```swift
 // Xcode indentation for a function declaration that spans multiple lines
@@ -115,7 +116,7 @@ if myFirstValue > (mySecondValue + myThirdValue)
 }
 ```
 
-* **1.10** When calling a function that has many parameters, put each argument on a separate line with a single extra indentation.
+* **1.11** When calling a function that has many parameters, put each argument on a separate line with a single extra indentation.
 
 ```swift
 someFunctionWithManyArguments(
@@ -124,7 +125,7 @@ someFunctionWithManyArguments(
     thirdArgument: someOtherLocalProperty)
 ```
 
-* **1.11** When dealing with an implicit array or dictionary large enough to warrant splitting it into multiple lines, treat the `[` and `]` as if they were braces in a method, `if` statement, etc. Closures in a method should be treated similarly.
+* **1.12** When dealing with an implicit array or dictionary large enough to warrant splitting it into multiple lines, treat the `[` and `]` as if they were braces in a method, `if` statement, etc. Closures in a method should be treated similarly.
 
 ```swift
 someFunctionWithABunchOfArguments(
@@ -142,7 +143,7 @@ someFunctionWithABunchOfArguments(
     })
 ```
 
-* **1.12** Prefer using local constants or other mitigation techniques to avoid multi-line predicates where possible.
+* **1.13** Prefer using local constants or other mitigation techniques to avoid multi-line predicates where possible.
 
 ```swift
 // PREFERRED
