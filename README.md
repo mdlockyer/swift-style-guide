@@ -573,6 +573,13 @@ func handleDigit(_ digit: Int) throws {
 
 * **3.5.1** The only times you should be using implicitly unwrapped optionals is with `@IBOutlet`s, and optional method parameters that have a default value. In every other case, it is better to use a non-optional or regular optional property. Yes, there are cases in which you can probably "guarantee" that the property will never be `nil` when used, but it is better to be safe and consistent. Similarly, don't use force unwraps.
 
+```swift
+@IBOutlet weak var someLabel: UILabel!
+
+func setText(label: UILabel, text: String? = "Hello World") {
+    label.text = text!
+}
+```
 * **3.5.2** Don't use `as!` or `try!`.
 
 * **3.5.3** If you don't plan on actually using the value stored in an optional, but need to determine whether or not this value is `nil`, explicitly check this value against `nil` as opposed to using `if let` syntax.
